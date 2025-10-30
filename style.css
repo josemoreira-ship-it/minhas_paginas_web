@@ -1,0 +1,103 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------- CABEÇALHO ---------- */
+header {
+    background-color: #0056b3;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0 0 10px;
+    font-size: 2em;
+}
+
+header p {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.5;
+    font-size: 1.05em;
+}
+
+/* ---------- CONTEÚDO PRINCIPAL ---------- */
+main {
+    max-width: 950px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #0056b3;
+    border-bottom: 2px solid #0056b3;
+    padding-bottom: 5px;
+}
+
+/* ---------- TABELA DE ATIVIDADES ---------- */
+.atividade-tabela {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.atividade-tabela th {
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.atividade-tabela td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.atividade-tabela td:nth-child(2) {
+    /* Coluna “Tema” */
+    font-style: italic;
+    color: #0056b3;
+    text-align: center;
+}
+
+.atividade-tabela tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.atividade-tabela a {
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.atividade-tabela a:hover {
+    text-decoration: underline;
+    color: #003f80;
+}
+
+.descricao {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1em;
+}
+
+/* ---------- RODAPÉ ---------- */
+footer {
+    background-color: #003f80;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    font-size: 0.9em;
+}

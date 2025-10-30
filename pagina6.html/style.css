@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #004085;
+}
+
+/* ----------------- Seletores de classe ----------------- */
+.menu {
+    background-color: #007bff;
+    padding: 10px 0;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.exemplo-classe {
+    color: darkgreen;
+    font-weight: bold;
+    background-color: #e2f0d9;
+    padding: 8px;
+    border-left: 4px solid darkgreen;
+    margin: 10px 0;
+}
+
+/* ----------------- Seletores de ID ----------------- */
+#exemplo-id {
+    color: darkred;
+    font-style: italic;
+    background-color: #f8d7da;
+    padding: 8px;
+    border-left: 4px solid darkred;
+    margin: 10px 0;
+}
+
+/* ----------------- Tabela ----------------- */
+table.propriedades {
+    width: 80%;                /* reduz a largura */
+    max-width: 800px;          /* largura máxima */
+    margin: 20px auto;         /* centraliza a tabela horizontalmente */
+    border-collapse: collapse;
+    border-radius: 10px;       /* cantos arredondados */
+    overflow: hidden;          /* para que o border-radius funcione */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2); /* sombra leve */
+}
+
+table.propriedades th {
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+table.propriedades td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+table.propriedades tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table.propriedades tr:hover {
+    background-color: #e6f0ff;   /* efeito hover */
+}
+
+/* ----------------- Footer ----------------- */
+footer {
+    text-align: center;
+    background-color: #004085;
+    color: white;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+.voltar a {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    margin-top: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.voltar a:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    text-decoration: none;
+}

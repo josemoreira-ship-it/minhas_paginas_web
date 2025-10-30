@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Aprendendo CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="topo">
+        <h1>Aprendendo CSS</h1>
+        <p>Este site é uma ferramenta de estudo para aprender CSS, seus seletores e propriedades.</p>
+    </header>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="#introducao">Introdução</a></li>
+            <li><a href="#seletores">Seletores</a></li>
+            <li><a href="#tabela">Tabela de Propriedades</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="introducao">
+            <h2>O que é CSS?</h2>
+            <p>CSS (Cascading Style Sheets) é uma linguagem usada para <strong>estilizar páginas HTML</strong>, definindo cores, fontes, layouts e muito mais.</p>
+            <p>Ele permite separar a <em>estrutura</em> (HTML) da <em>apresentação</em> (estilos), tornando o desenvolvimento mais organizado.</p>
+
+            <p class="voltar"><a href="#topo">Voltar ao Início</a></p>
+        </section>
+
+        <section id="seletores">
+            <h2>Tipos de Seletores CSS</h2>
+            <p>Existem diversos tipos de seletores que permitem aplicar estilos de diferentes maneiras:</p>
+            <ul>
+                <li><strong>Seletor de elemento:</strong> aplica estilos a todas as tags especificadas.</li>
+                <li><strong>Seletor de classe:</strong> aplica estilos a elementos que possuem determinada classe.</li>
+                <li><strong>Seletor de ID:</strong> aplica estilos a um elemento específico que possui um ID único.</li>
+            </ul>
+            <p class="exemplo-classe">Este parágrafo usa uma <strong>classe</strong> para receber estilos específicos.</p>
+            <p id="exemplo-id">Este parágrafo usa um <strong>ID</strong> para receber estilos específicos.</p>
+            <p class="voltar"><a href="#topo">Voltar ao Início</a></p>
+        </section>
+
+        <section id="tabela">
+            <h2>Tabela de Propriedades CSS Comuns</h2>
+            <table class="propriedades">
+                <thead>
+                    <tr>
+                        <th>Propriedade</th>
+                        <th>Descrição</th>
+                        <th>Exemplo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>color</td>
+                        <td>Define a cor do texto</td>
+                        <td>color: red;</td>
+                    </tr>
+                    <tr>
+                        <td>background-color</td>
+                        <td>Define a cor de fundo</td>
+                        <td>background-color: yellow;</td>
+                    </tr>
+                    <tr>
+                        <td>font-size</td>
+                        <td>Define o tamanho da fonte</td>
+                        <td>font-size: 18px;</td>
+                    </tr>
+                    <tr>
+                        <td>margin</td>
+                        <td>Define a margem externa de um elemento</td>
+                        <td>margin: 20px;</td>
+                    </tr>
+                    <tr>
+                        <td>padding</td>
+                        <td>Define o espaçamento interno de um elemento</td>
+                        <td>padding: 10px;</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p class="voltar"><a href="#topo">Voltar ao Início</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Aprendendo CSS | Material de Estudo</p>
+    </footer>
+
+</body>
+</html>

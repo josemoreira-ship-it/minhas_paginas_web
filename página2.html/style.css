@@ -1,0 +1,68 @@
+body {
+  background-color: #fdfdfd;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  color: #2b2b2b;
+}
+
+h1 {
+  font-family: "Georgia", serif;
+  color: #b99b69;
+}
+
+h2 {
+  font-family: "Georgia", serif;
+  color: #3b2f1c;
+}
+
+p, li {
+  font-size: 1em;
+  line-height: 1.6em;
+}
+
+.menu {
+  background-color: #3b2f1c;
+  text-align: center;
+  padding: 10px;
+}
+
+.menu a {
+  color: #f4f1de;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: square;
+}
+
+footer {
+  background-color: #1b1b1b;
+  color: #f4f1de;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.galeria {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.galeria img {
+  width: 200px;
+  border-radius: 10px;
+  border: 3px solid #3b2f1c;
+  transition: transform 0.3s;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+}
