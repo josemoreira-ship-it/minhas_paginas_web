@@ -1,0 +1,78 @@
+/* style.css - simples e didático atualizado */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #f4f6f8;
+  color: #222;
+  line-height: 1.5;
+  padding: 20px;
+}
+
+header {
+  background: linear-gradient(90deg, #2b6cb0, #4aa3e0);
+  color: white;
+  padding: 18px;
+  border-radius: 8px;
+  margin-bottom: 18px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+header h1 {
+  font-size: 1.6rem;
+  margin-bottom: 6px;
+}
+
+section {
+  background: white;
+  border-radius: 8px;
+  padding: 14px;
+  margin-bottom: 14px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+
+label {
+  font-weight: 600;
+}
+
+/* INPUTS E SELETORES */
+select, textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #cfd8df;
+  margin-top: 6px;
+  margin-bottom: 10px;
+}
+
+/* SELECT DA NOTA (ajuste solicitado) */
+#nota {
+  width: 120px;       /* select compacto */
+  display: inline-block;
+}
+
+/* BOTÕES */
+button {
+  background: #2b6cb0;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #245f9e;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  margin-top: 20px;
+  color: #555;
+}

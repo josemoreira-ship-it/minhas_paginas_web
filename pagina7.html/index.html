@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade - Introdução à Construção de Páginas Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Introdução à Construção de Páginas Web</h1>
+        <p>Professor: <strong>Carlos Henrique Correa Tolentino</strong></p>
+    </header>
+
+    <main>
+
+        <section id="sobre">
+            <h2>Sobre a Atividade</h2>
+            <p>A disciplina de Introdução à Construção de Páginas Web apresenta noções básicas de HTML e CSS, permitindo ao aluno entender como páginas são estruturadas e exibidas no navegador.</p>
+        </section>
+
+        <section id="formulario">
+            <h3>Avalie a Disciplina</h3>
+
+            <form>
+
+                <label>Você acha a Disciplina importante para o curso?</label>
+                <input type="radio" name="importante" value="Sim"> Sim
+                <input type="radio" name="importante" value="Não"> Não
+                <br><br>
+
+                <h4>De 0 a 5, que nota você daria para a Disciplina?</h4>
+
+                <p>Considere 5 como muito importante e 0 como sem importância:</p>
+
+                <label for="nota">Nota:</label>
+                <select id="nota" name="nota">
+                    <option value=""></option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <br><br>
+
+                <label>Qual sua avaliação do professor da Disciplina?</label><br>
+                <input type="radio" name="avaliacao" value="Excelente"> Excelente<br>
+                <input type="radio" name="avaliacao" value="Bom"> Bom<br>
+                <input type="radio" name="avaliacao" value="Regular"> Regular<br>
+                <input type="radio" name="avaliacao" value="Satisfatório"> Satisfatório<br>
+                <input type="radio" name="avaliacao" value="Não sei"> Não sei<br>
+                <br><br>
+
+                <label>Como você avalia o professor Carlos Henrique Correa Tolentino?</label><br>
+                <input type="radio" name="avaliacao_prof" value="Excelente"> Excelente<br>
+                <input type="radio" name="avaliacao_prof" value="Bom"> Bom<br>
+                <input type="radio" name="avaliacao_prof" value="Regular"> Regular<br>
+                <input type="radio" name="avaliacao_prof" value="Precisa melhorar"> Precisa melhorar<br>
+                <input type="radio" name="avaliacao_prof" value="Não conheço"> Não conheço<br>
+                <br><br>
+
+                <label for="comentario">Comentário rápido:</label><br>
+                <textarea id="comentario" name="comentario" rows="4" placeholder="Escreva sua opinião sobre a disciplina..."></textarea>
+                <br><br>
+
+                <button type="submit">Enviar Resposta</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Desenvolvido por José Joaci Vieira Moreira - Atividade da disciplina Introdução à Construção de Páginas Web</p>
+    </footer>
+
+</body>
+</html>
