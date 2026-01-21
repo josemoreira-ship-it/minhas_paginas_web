@@ -1,0 +1,98 @@
+/* styles.css - estilos simples e responsivos */
+:root {
+  --bg: #0f172a;
+  --card: #111827;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --accent: #22c55e;
+  --code-bg: #0b1020;
+  --border: #1f2937;
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Segoe UI Emoji", "Apple Color Emoji", sans-serif;
+  background: radial-gradient(1200px 800px at 20% -10%, #122044, transparent), var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.site-header {
+  padding: 2.5rem 1.25rem 1.5rem;
+  text-align: center;
+}
+.site-header h1 {
+  margin: 0 0 0.5rem 0;
+  font-weight: 700;
+}
+.site-header p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1rem 4rem;
+}
+
+.toc {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+}
+.toc h2 { margin-top: 0; }
+.toc a { color: var(--accent); text-decoration: none; }
+.toc a:hover { text-decoration: underline; }
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.25rem;
+  margin: 1.5rem 0;
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.02) inset;
+}
+
+.demo { margin: 1rem 0; }
+.video { max-width: 100%; height: auto; display: block; }
+
+audio { width: 100%; }
+
+/* Wrapper responsivo 16:9 para embeds (YouTube) */
+.video-embed {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: #000;
+}
+.video-embed iframe {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%; border: 0;
+}
+
+.code {
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1rem;
+  overflow-x: auto;
+}
+.code code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size: .95rem; }
+
+.notes { color: var(--muted); }
+.notes li { margin: .25rem 0; }
+
+.site-footer {
+  text-align: center;
+  color: var(--muted);
+  padding: 2rem 1rem;
+}
