@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Boas Práticas: &lt;audio&gt; e &lt;video&gt; em HTML5</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <h1>Boas Práticas no Uso das tags <code>&lt;audio&gt;</code> e <code>&lt;video&gt;</code> no HTML5</h1>
+  </header>
+
+  <section id="audio-basico" class="card">
+    <h2>1) Áudio básico com múltiplos formatos</h2>
+    <p>
+      Para maximizar a compatibilidade entre navegadores, ofereça o mesmo áudio em mais de um
+      formato (por exemplo, <code>.mp3</code> e <code>.ogg</code>) dentro de <code>&lt;source&gt;</code>.
+      O navegador escolhe automaticamente o primeiro formato que suporta.
+    </p>
+
+    <p>Abaixo apresentamos um áudio educativo sobre como utilizar a tag de áudio.</p>
+
+    <div class="demo">
+      <audio controls preload="metadata">
+        <source src="tag_audio.mp3" type="audio/mpeg" />
+        <source src="tag_audio.ogg" type="audio/ogg" />
+        Seu navegador não suporta o elemento <code>audio</code>.
+      </audio>
+    </div>
+
+  </section>
+
+  <section id="video-local" class="card">
+    <h2>2) Vídeo local com pôster, múltiplos formatos e legendas</h2>
+    <p>
+      Tal como no áudio, forneça o vídeo em mais de um formato (<code>.mp4</code> com H.264 e <code>.webm</code>, por
+      exemplo).
+      Você também pode exibir uma imagem de capa com <code>poster</code> e adicionar legendas com
+      <code>&lt;track&gt;</code>.
+    </p>
+
+    <p>Abaixo apresentamos uma vídeo-aula sobre o uso da tag vidio.</p>>
+
+    <div class="demo">
+      <video class="video" controls preload="metadata" width="360" poster="midia/posters/capa-video.jpg">
+        <source src="tag_video.mp4" type="video/mp4" />
+        <source src="tag_video.webm" type="video/webm" />
+        Seu navegador não suporta o elemento <code>video</code>.
+      </video>
+    </div>
+
+    <section id="youtube" class="card">
+      <h2>3) Incorporando um vídeo do YouTube</h2>
+      <p>
+        Para exibir um vídeo hospedado no YouTube dentro da sua página, utilize um <code>&lt;iframe&gt;</code>.
+        A versão de privacidade aprimorada usa o domínio <code>youtube-nocookie.com</code>.
+      </p>
+
+      <div class="demo">
+        <div class="video-embed">
+          <iframe width="360" height="215" src="https://www.youtube.com/embed/eV4UcOAIP-4?si=f6xrWlDuQeJsfAJW"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="boas-praticas" class="card">
+      <h2>4) Boas práticas e acessibilidade</h2>
+      <ul>
+        <li>Forneça alternativas de texto (ex.: descrição próxima ao player) e legendas (<code>&lt;track&gt;</code>).
+        </li>
+        <li>Evite <strong>autoplay com som</strong>; se necessário, use <code>muted</code> e ofereça controles.</li>
+        <li>Otimize os arquivos de mídia (bitrate/resolução adequados) para reduzir tempo de carregamento.</li>
+        <li>Hospede os vídeos locais na mesma origem/domínio do seu site para evitar problemas de CORS.</li>
+        <li>Organize sua pasta <code>midia/</code> e use nomes descritivos para facilitar manutenção.</li>
+      </ul>
+    </section>
+
+    <section id="dicas-de-arquivos" class="card">
+      <h2>5) Dicas de organização de arquivos</h2>
+      <pre class="code"><code>seu-projeto/
+├── index.html
+├── styles.css
+└── midia/
+    ├── audio/
+    │   ├── musica-exemplo.mp3
+    │   └── musica-exemplo.ogg
+    ├── video/
+    │   ├── meu-video.mp4
+    │   └── meu-video.webm
+    ├── posters/
+    │   └── capa-video.jpg
+    └── legendas/
+        └── meu-video-ptbr.vtt
+</code></pre>
+
+</body>
+
+</html>
